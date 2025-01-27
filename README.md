@@ -75,7 +75,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 The App component serves as the entry point for the `User Management Dashboard` application. It is responsible for rendering the main user interface, which includes displaying a list of users, and providing features such as adding, editing, and deleting users. This component also incorporates error handling using an ErrorBoundary component to ensure smooth user experience by displaying a fallback UI in case of any errors.
 
 
-```json
+```jsx
 import "./App.css";
 import UserList from "./components/UserList/UserList";
 import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
