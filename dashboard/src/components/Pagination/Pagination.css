@@ -1,0 +1,26 @@
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  height: 40px;
+  max-width: 200px;
+  margin: 18px auto;
+  padding: 0;
+  border-radius: 4px;
+}
+
+.pagination-container span {
+  font-family: "Arial";
+  font-weight: 500;
+}
+
+.pagination-container button {
+  border: none;
+  outline: none;
+}
+
+.page-control-icon {
+  width: 22px;
+  height: 22px;
+}

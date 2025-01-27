@@ -1,0 +1,87 @@
+.user-item {
+  display: grid;
+  grid-template-columns: 100px 200px 200px repeat(2, 1fr);
+  gap: 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 14px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  transition: transform 300ms cubic-bezier(0.25, 1, 0.5, 1),
+    box-shadow 300ms ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.user-item button {
+  background: transparent;
+  color: rgb(47, 35, 211);
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.icons {
+  width: 22px;
+  height: 22px;
+}
+
+.user-item:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add shadow for a popup effect */
+  margin-bottom: 4px;
+}
+
+.user-item-buttons {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  gap: 8px;
+}
+
+.user-item p span {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .user-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .user-item p span {
+    display: block;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+  }
+
+  .user-item p {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    font-size: 16px;
+  }
+
+  .user-item button {
+    background: transparent;
+    color: rgb(47, 35, 211);
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .user-item-buttons {
+    right: 6px;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 500px) {
+  .user-item p {
+    font-size: 12px;
+  }
+  .icons {
+    width: 18px;
+    height: 18px;
+  }
+}
