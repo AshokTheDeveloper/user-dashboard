@@ -12,7 +12,7 @@ class UserList extends Component {
     showForm: false,
     error: null,
     currentPage: 1,
-    usersPerPage: 5,
+    usersPerPage: 8,
     totalUsers: 10,
   };
 
@@ -135,6 +135,7 @@ class UserList extends Component {
     const apiUrl = this.generateApiUrl();
     try {
       const data = await this.fetchApi(apiUrl, "POST", user);
+      console.log(data);
 
       const newUser = {
         ...user,
